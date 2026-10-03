@@ -441,13 +441,7 @@ Security features implemented in the application include:
 - **HMAC Payment Signature Verification:** Razorpay payment responses are cryptographically validated on the server using Node's HMAC SHA256 before orders are committed.
 - **Secret Isolation:** API keys, database credentials, and token secrets are managed exclusively through environment variables.
 
----
 
-## Screenshots
-
-> Screenshots can be added here.
-
----
 
 ## Future Improvements
 
