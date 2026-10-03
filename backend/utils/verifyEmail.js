@@ -10,8 +10,11 @@ const sendVerificationEmail = async (user) => {
 
     await user.save();
 
-    const verificationLink =
-        `http://localhost:5000/api/auth/verify-email/${token}`;
+  const backendURL =
+    process.env.BACKEND_URL || "http://localhost:5000";
+
+const verificationLink =
+    `${backendURL}/api/auth/verify-email/${token}`;
 
     await sendEmail(
         user.email,
